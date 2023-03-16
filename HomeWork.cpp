@@ -71,7 +71,7 @@ string random_text_fragment_generator(string l) {
 			spaces += 1;
 		}
 
-		if (spaces < 3 && txt_fragment.length() <= 20) {
+		if (spaces < 4 && txt_fragment.length() < 20) {
 			txt_fragment += text[i];
 		}
 		else {
@@ -228,5 +228,5 @@ int main()
 	cout << returned_txt << " - second b task" << endl;
 
 	//Second C Task
-	cout << first_b(changed_txt, true) << " - occurrence static" << endl;
+	cout << first_b(changed_txt) << " - second ñ task" << endl;
 }
